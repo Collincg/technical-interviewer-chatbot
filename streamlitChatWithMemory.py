@@ -20,12 +20,6 @@ load_dotenv()
 # LANGCHAIN_API_KEY = os.getenv('LANGCHAIN_API_KEY')
 # GROQ_API_KEY = os.getenv('GROQ_API_KEY')
 
-# use this for StreamLit cloud
-if "GROQ_API_KEY" in st.secrets:
-    GROQ_API_KEY = st.secrets.GROQ_API_KEY
-else:
-    st.info("Enter an Groq API Key to continue")
-
 st.set_page_config(page_title="StreamlitChatMessageHistory", page_icon="📖")
 st.title("📖 StreamlitChatMessageHistory")
 
@@ -36,6 +30,12 @@ in the expander below. View the
 [source code for this app](https://github.com/langchain-ai/streamlit-agent/blob/main/streamlit_agent/basic_memory.py).
 """
 
+# use this for StreamLit cloud
+if "GROQ_API_KEY" in st.secrets:
+    GROQ_API_KEY = st.secrets.GROQ_API_KEY
+else:
+    st.info("Enter an Groq API Key to continue")
+    
 # Set up memory
 msgs = StreamlitChatMessageHistory(key="langchain_messages")
 
