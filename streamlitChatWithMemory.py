@@ -32,10 +32,10 @@ in the expander below. View the
 
 # use this for StreamLit cloud
 if "GROQ_API_KEY" in st.secrets:
-    GROQ_API_KEY = st.secrets.GROQ_API_KEY
+    GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
 else:
     st.info("Enter an Groq API Key to continue")
-    
+
 # Set up memory
 msgs = StreamlitChatMessageHistory(key="langchain_messages")
 
