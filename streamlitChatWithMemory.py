@@ -20,8 +20,8 @@ load_dotenv()
 # LANGCHAIN_API_KEY = os.getenv('LANGCHAIN_API_KEY')
 # GROQ_API_KEY = os.getenv('GROQ_API_KEY')
 GROQ_API_KEY_M = os.getenv('GROQ_API_KEY')
-print("TEST")
-print(GROQ_API_KEY_M)
+print("TEST_1")
+print("os.getenv() test: ", GROQ_API_KEY_M)
 
 st.set_page_config(page_title="StreamlitChatMessageHistory", page_icon="📖")
 st.title("📖 StreamlitChatMessageHistory")
@@ -34,11 +34,12 @@ in the expander below. View the
 """
 
 # use this for StreamLit cloud
-print("TEST")
+print("TEST_2")
 GROQ_API_KEY_N = st.secrets["GROQ_API_KEY"]
-print(GROQ_API_KEY_N)
+print("st.secrets[string] test: ", GROQ_API_KEY_N)
 GROQ_API_KEY = st.secrets.GROQ_API_KEY
-print(GROQ_API_KEY)
+print("TEST_3")
+print("st.secrets.API_KEY test: ", GROQ_API_KEY)
 
 # if "GROQ_API_KEY" in st.secrets:
 #     GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
