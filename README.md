@@ -65,4 +65,14 @@ The code is organized as follows:
 
 3. **See `streamlitChatWithMemory.py` for a deeper understanding**
 
+---
 
+### Contributors
+
+- **Collin Graff**  
+  - Role: Lead Developer  
+  - Contributions: Concept design, coding, and deployment.
+
+- **David Robert**  
+  - Role: Assistant Developer  
+  - Contributions: Code improvements, testing, and troubleshooting.
