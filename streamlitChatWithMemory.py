@@ -39,8 +39,7 @@ in the expander below. View the
 # print("TEST_2")
 # GROQ_API_KEY_N = st.secrets["GROQ_API_KEY"]
 
-# GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
-GROQ_API_KEY = "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"
+GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
 # print("st.secrets[string] test: ", GROQ_API_KEY_N)
 # GROQ_API_KEY = st.secrets.GROQ_API_KEY
 # print("TEST_3")
