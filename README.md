@@ -3,6 +3,11 @@
 This project is a **Technical Interview Chatbot** designed to simulate a technical interview environment for individuals in the fields of Computer/Data Science and related areas. By using this chatbot, you can practice both behavioral and technical questions in a stress-free setting. The chatbot leverages the **Groq API** for language model processing, **LangChain** for managing prompts and conversation history, and **Streamlit** for the frontend interface. You can checkout the website here [Technical Interview Chatbot](https://egbq4q5zwmmp2ildkdmmde.streamlit.app/)! 
 
 ---
+### A preview of the StreamLit User Interface
+<img width="775" alt="Screenshot 2024-12-12 at 12 24 00 PM" src="https://github.com/user-attachments/assets/ef95cda4-dc77-499f-9b46-8db8f1b03849" />
+
+
+---
 
 ## Features
 
@@ -20,7 +25,6 @@ This project is a **Technical Interview Chatbot** designed to simulate a technic
 - **LangChain** is used to manage conversaiton flow and memory. See this guide on their website to learn more [Build a Chatbot | 🦜️🔗 LangChain](https://python.langchain.com/docs/tutorials/chatbot/).
 - A **GROQ API Key** (or any preferred API key) to use the AI model (this is stored securely using Streamlit secrets).
 - Some basic and intuitive **StreamLit** commands are used.
-- Access to **Streamlit Cloud** for deployment (optional).
 
 ---
 
@@ -38,39 +42,7 @@ This project is a **Technical Interview Chatbot** designed to simulate a technic
 
 3. **Deployment**: Deploy the app using Streamlit Cloud for easy access.
 
-## Code Explanation
-
-The code is organized as follows:
-
-1. **User Interaction**: 
-   - Users interact with the chatbot through a Streamlit web interface.
-   - A memory component stores the context of the conversation using `StreamlitChatMessageHistory`.
-
-2. **Chat Logic**:
-   - The chatbot uses LangChain and GROQ's `llama-3.1-70b-versatile` model to process and generate responses.
-   - The interview simulation is guided by a prompt that ensures relevance to the user's chosen field.
-
-3. **Real-Time Feedback**:
-   - The chatbot provides feedback on user responses to help improve interview performance.
-
-## How to Use the Website
-
-1. Visit the deployed website [Insert Website Link Here].
-2. Enter the field or job description you're preparing for.
-3. Answer the chatbot's questions as if you were in a real interview.
-4. Review the feedback provided to refine your answers.
-
-## Screenshots
-
-Below are screenshots of the Streamlit Cloud interface showcasing the app:
-
-### Home Page
-![Home Page Screenshot](path/to/homepage_screenshot.png)
-
-### Chat Interface
-![Chat Interface Screenshot](path/to/chat_interface_screenshot.png)
-
 ---
 
-Feel free to customize this further or let me know if you'd like help refining or expanding on any sections!
+## Code Explanation
 
