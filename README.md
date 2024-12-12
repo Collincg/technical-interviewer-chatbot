@@ -48,6 +48,7 @@ This project is a **Technical Interview Chatbot** designed to simulate a technic
      
        <img width="707" alt="Screenshot 2024-12-12 at 12 08 23 PM" src="https://github.com/user-attachments/assets/cc816f7f-2fb4-4b34-97f2-5e1a12ceae7b" />
 
+   - If StreamLit still can't access the API key after deployment, find advanced settings again on the running website and double check the "Secrets" to ensure your API is present and       correctly formated. 
 ---
 
 ## Code Explanation
