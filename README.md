@@ -55,17 +55,7 @@ This project is a **Technical Interview Chatbot** designed to simulate a technic
 
 ## Code Explanation
 
-The code is organized as follows:
-
-1. **User Interaction**: 
-   - Users interact with the chatbot through a Streamlit web interface.
-   - A memory component stores the context of the conversation using `StreamlitChatMessageHistory`.
-
-2. **Chat Logic**:
-   - The chatbot uses LangChain and GROQ's `llama-3.1-70b-versatile` model to process and generate responses.
-   - The interview simulation is guided by a prompt that ensures relevance to the user's chosen field.
-
-3. **See `streamlitChatWithMemory.py` for a deeper understanding**
+**See the programming guide: `programmingGuide.md` for a deeper understanding of `streamlitChatWithMemory.py`.**
 
 ---
 
