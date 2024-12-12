@@ -37,7 +37,7 @@ This project is a **Technical Interview Chatbot** designed to simulate a technic
    ```
 2. See the `requirements.txt` to setup necessary packages.
 
-2. **GROQ API Key**: Store your GROQ API key securely in `secrets.toml` for Streamlit Cloud.
+2. **GROQ API Key**: visit [GroqCloud](https://console.groq.com/keys) to create and use a free API key in your project.
 
 3. **Deployment**: Deploy the app using StreamLit Cloud for easy access.
    - When creating a new project on StreamLit Cloud, you will see an option to simply connect a GitHub repository and choose the main file. StreamLit will handle the rest!
@@ -51,4 +51,17 @@ This project is a **Technical Interview Chatbot** designed to simulate a technic
 ---
 
 ## Code Explanation
+
+The code is organized as follows:
+
+1. **User Interaction**: 
+   - Users interact with the chatbot through a Streamlit web interface.
+   - A memory component stores the context of the conversation using `StreamlitChatMessageHistory`.
+
+2. **Chat Logic**:
+   - The chatbot uses LangChain and GROQ's `llama-3.1-70b-versatile` model to process and generate responses.
+   - The interview simulation is guided by a prompt that ensures relevance to the user's chosen field.
+
+3. **See `streamlitChatWithMemory.py` for a deeper understanding**
+
 
