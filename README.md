@@ -2,7 +2,7 @@
 
 You can use the chatbot here [Technical Interview Chatbot](https://egbq4q5zwmmp2ildkdmmde.streamlit.app/)! 
 
-This project is a **Technical Interview Chatbot** designed to simulate a technical interview environment for individuals in the fields of Computer/Data Science and related areas. By using this chatbot, you can practice both behavioral and technical questions in a stress-free setting. The chatbot leverages the **Groq LLM** for language model processing, **LangChain** for managing prompts and conversation history, and **Streamlit** for the frontend interface.
+This project is a **Technical Interview Chatbot** designed to simulate a technical interview environment for individuals in the fields of Computer/Data Science and related areas. By using this chatbot, you can practice both behavioral and technical questions in a stress-free setting. The chatbot leverages the **Groq API** and the **llama-3.1-70b-versatile** LLM for language model processing, **LangChain** for managing prompts and conversation history, and **Streamlit** for the frontend interface.
 
 ---
 ### A preview of the StreamLit User Interface:
