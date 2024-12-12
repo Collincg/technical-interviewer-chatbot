@@ -8,22 +8,12 @@ from langchain_groq import ChatGroq
 
 import streamlit as st
 
-import os
-from dotenv import load_dotenv
+# import os
+# from dotenv import load_dotenv
 
-# Carga las variables desde el archivo .env
-load_dotenv()
+# # Carga las variables desde el archivo .env
+# load_dotenv()
 
-# Ahora puedes acceder a las variables de entorno
-# StreamLit-cloud does not have access to these environmental variables and it handles it on its own
-# LANGCHAIN_TRACING_V2 = os.getenv('LANGCHAIN_TRACING_V2')
-# LANGCHAIN_API_KEY = os.getenv('LANGCHAIN_API_KEY')
-
-# GROQ_API_KEY = os.getenv('GROQ_API_KEY')
-
-# GROQ_API_KEY_M = os.getenv('GROQ_API_KEY')
-# print("TEST_1")
-# print("os.getenv() test: ", GROQ_API_KEY_M)
 
 st.set_page_config(page_title="Technical Interview Chatbot", page_icon="📖")
 st.title("Technical Interview Chatbot")
@@ -35,20 +25,8 @@ This provides you with a less stressful opportunity to prepare for a real techni
 Give this chatbot a job description and/or questions that you would like practice with!
 """
 
-# use this for StreamLit cloud
-# print("TEST_2")
-# GROQ_API_KEY_N = st.secrets["GROQ_API_KEY"]
-
 GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
-# print("st.secrets[string] test: ", GROQ_API_KEY_N)
-# GROQ_API_KEY = st.secrets.GROQ_API_KEY
-# print("TEST_3")
-# print("st.secrets.API_KEY test: ", GROQ_API_KEY)
 
-# if "GROQ_API_KEY" in st.secrets:
-#     GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
-# else:
-#     st.info("Enter an Groq API Key to continue")
 
 # Set up memory
 msgs = StreamlitChatMessageHistory(key="langchain_messages")
