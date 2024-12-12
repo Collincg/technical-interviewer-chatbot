@@ -1,11 +1,9 @@
-# Use: streamlit run streamlitChatWithMemory.py
+# Use: streamlit run streamlitChatWithMemory.py if you're testing this before a StreamLit Cloud deployment
 
 from langchain_community.chat_message_histories import StreamlitChatMessageHistory
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_groq import ChatGroq
-
-
 import streamlit as st
 
 
@@ -15,6 +13,7 @@ st.title("Technical Interview Chatbot")
 """
 This is a chatbot designed to simulate a technical interview for Computer/Data Scientists or any adjacent fields. 
 This provides you with a less stressful opportunity to prepare for a real technical interview. 
+You are welcome to practice behavioral and technical questions.
 """
 
 GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
@@ -26,10 +25,8 @@ msgs = StreamlitChatMessageHistory(key="langchain_messages")
 if len(msgs.messages) == 0:
     msgs.add_ai_message("Hello, I will be conducting your interveiw today. Can you tell me what field you're applying for? You can also give me a job description and/or questions that you would like practice with!")
 
-# view_messages = st.expander("View the message contents in session state") # comment this out for message display
 
 # Set up the LangChain, passing in Message History
-
 prompt = ChatPromptTemplate.from_messages(
     [
         ("system", "You are an expert in the field of Computer Science. You give technical interviews to software engineers, programmers, and intern applicants. Your mission is to ask relevant questions about their experience and technical questions to the applicant. After you can offer feedback about their response. First have them clarify what position they are applying for so you can better guide the interview."),
@@ -59,18 +56,6 @@ if prompt := st.chat_input():
     response = chain_with_history.invoke({"question": prompt}, config)
     st.chat_message("ai").write(response.content)
 
-# Draw the messages at the end, so newly generated ones show up immediately
-# comment this out as well message for history
-# with view_messages:
-#     """
-#     Message History initialized with:
-#     ```python
-#     msgs = StreamlitChatMessageHistory(key="langchain_messages")
-#     ```
-
-#     Contents of `st.session_state.langchain_messages`:
-#     """
-#     view_messages.json(st.session_state.langchain_messages)
 
 
 
