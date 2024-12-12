@@ -2,7 +2,7 @@
 
 You can use the chatbot here [Technical Interview Chatbot](https://egbq4q5zwmmp2ildkdmmde.streamlit.app/)! 
 
-This project is a **Technical Interview Chatbot** designed to simulate a technical interview environment for individuals in the fields of Computer/Data Science and related areas. By using this chatbot, you can practice both behavioral and technical questions in a stress-free setting. The chatbot leverages the **Groq LLM** for language model processing, **LangChain** for managing prompts and conversation history, and **Streamlit** for the frontend interface.
+This project is a **Technical Interview Chatbot** designed to simulate a technical interview environment for individuals in the fields of Computer/Data Science and related areas. By using this chatbot, you can practice both behavioral and technical questions in a stress-free setting. The chatbot leverages the **Groq API** and the **llama-3.1-70b-versatile** LLM for language model processing, **LangChain** for managing prompts and conversation history, and **Streamlit** for the frontend interface.
 
 ---
 ### A preview of the StreamLit User Interface:
@@ -55,17 +55,7 @@ This project is a **Technical Interview Chatbot** designed to simulate a technic
 
 ## Code Explanation
 
-The code is organized as follows:
-
-1. **User Interaction**: 
-   - Users interact with the chatbot through a Streamlit web interface.
-   - A memory component stores the context of the conversation using `StreamlitChatMessageHistory`.
-
-2. **Chat Logic**:
-   - The chatbot uses LangChain and GROQ's `llama-3.1-70b-versatile` model to process and generate responses.
-   - The interview simulation is guided by a prompt that ensures relevance to the user's chosen field.
-
-3. **See `streamlitChatWithMemory.py` for a deeper understanding**
+**See the programming guide: `programmingGuide.md` for a deeper understanding of `streamlitChatWithMemory.py`.**
 
 ---
 
