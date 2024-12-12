@@ -29,10 +29,10 @@ st.set_page_config(page_title="Technical Interview Chatbot", page_icon="📖")
 st.title("Technical Interview Chatbot")
 
 """
-A basic example of using StreamlitChatMessageHistory to help LLMChain remember messages in a conversation.
-The messages are stored in Session State across re-runs automatically. You can view the contents of Session State
-in the expander below. View the
-[source code for this app](https://github.com/langchain-ai/streamlit-agent/blob/main/streamlit_agent/basic_memory.py).
+This is a chatbot designed to simulate a technical interview for Computer/Data Scientists or any adjacent fields. 
+This provides you with a less stressful opportunity to prepare for a real technical interview. 
+
+Give this chatbot a job description and/or questions that you would like practice with!
 """
 
 # use this for StreamLit cloud
