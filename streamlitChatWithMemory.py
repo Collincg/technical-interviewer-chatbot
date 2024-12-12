@@ -8,12 +8,6 @@ from langchain_groq import ChatGroq
 
 import streamlit as st
 
-# import os
-# from dotenv import load_dotenv
-
-# # Carga las variables desde el archivo .env
-# load_dotenv()
-
 
 st.set_page_config(page_title="Technical Interview Chatbot", page_icon="📖")
 st.title("Technical Interview Chatbot")
@@ -34,7 +28,7 @@ msgs = StreamlitChatMessageHistory(key="langchain_messages")
 if len(msgs.messages) == 0:
     msgs.add_ai_message("Hello, I will be conducting your interveiw today. Can you tell me what field you're applying for?")
 
-view_messages = st.expander("View the message contents in session state") # comment this out for message display
+# view_messages = st.expander("View the message contents in session state") # comment this out for message display
 
 # Set up the LangChain, passing in Message History
 
@@ -46,9 +40,6 @@ prompt = ChatPromptTemplate.from_messages(
     ]
 )
 
-#chain = prompt | ChatGroq(api_key=groq_api_key)
-# model = ChatGroq(model="llama3-8b-8192", api_key=GROQ_API_KEY)
-# model = ChatGroq(model="llama3-groq-70b-8192-tool-use-preview", api_key=GROQ_API_KEY)
 model = ChatGroq(model="llama-3.1-70b-versatile", api_key=GROQ_API_KEY)
 chain = prompt | model
 chain_with_history = RunnableWithMessageHistory(
@@ -71,17 +62,17 @@ if prompt := st.chat_input():
     st.chat_message("ai").write(response.content)
 
 # Draw the messages at the end, so newly generated ones show up immediately
-# this as well for history
-with view_messages:
-    """
-    Message History initialized with:
-    ```python
-    msgs = StreamlitChatMessageHistory(key="langchain_messages")
-    ```
+# comment this out as well message for history
+# with view_messages:
+#     """
+#     Message History initialized with:
+#     ```python
+#     msgs = StreamlitChatMessageHistory(key="langchain_messages")
+#     ```
 
-    Contents of `st.session_state.langchain_messages`:
-    """
-    view_messages.json(st.session_state.langchain_messages)
+#     Contents of `st.session_state.langchain_messages`:
+#     """
+#     view_messages.json(st.session_state.langchain_messages)
 
 
 
