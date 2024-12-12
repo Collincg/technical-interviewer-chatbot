@@ -1,6 +1,8 @@
 # Technical Interviewer Chatbot
 
-This project is a **Technical Interview Chatbot** designed to simulate a technical interview environment for individuals in the fields of Computer/Data Science and related areas. By using this chatbot, you can practice both behavioral and technical questions in a stress-free setting. The chatbot leverages the **Groq LLM** for language model processing, **LangChain** for managing prompts and conversation history, and **Streamlit** for the frontend interface. You can use the chatbot here [Technical Interview Chatbot](https://egbq4q5zwmmp2ildkdmmde.streamlit.app/)! 
+You can use the chatbot here [Technical Interview Chatbot](https://egbq4q5zwmmp2ildkdmmde.streamlit.app/)! 
+
+This project is a **Technical Interview Chatbot** designed to simulate a technical interview environment for individuals in the fields of Computer/Data Science and related areas. By using this chatbot, you can practice both behavioral and technical questions in a stress-free setting. The chatbot leverages the **Groq LLM** for language model processing, **LangChain** for managing prompts and conversation history, and **Streamlit** for the frontend interface.
 
 ---
 ### A preview of the StreamLit User Interface:
@@ -21,7 +23,7 @@ This project is a **Technical Interview Chatbot** designed to simulate a technic
 ## Prerequisites
 
 - Basic knowledge of **Python** programming.
-- **LangChain** is used to manage conversaiton flow and memory. See this guide on their website to learn more [Build a Chatbot | 🦜️🔗 LangChain](https://python.langchain.com/docs/tutorials/chatbot/).
+- **LangChain** is used to manage conversation flow and memory. See this guide on their website to learn more [Build a Chatbot | 🦜️🔗 LangChain](https://python.langchain.com/docs/tutorials/chatbot/).
 - A **GROQ API Key** (or any preferred API key) to use the AI model (this is stored securely using Streamlit secrets).
 - Some basic and intuitive **StreamLit** commands are used.
 
