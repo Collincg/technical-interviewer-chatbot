@@ -15,8 +15,6 @@ st.title("Technical Interview Chatbot")
 """
 This is a chatbot designed to simulate a technical interview for Computer/Data Scientists or any adjacent fields. 
 This provides you with a less stressful opportunity to prepare for a real technical interview. 
-
-Give this chatbot a job description and/or questions that you would like practice with!
 """
 
 GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
@@ -26,7 +24,7 @@ GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
 msgs = StreamlitChatMessageHistory(key="langchain_messages")
 
 if len(msgs.messages) == 0:
-    msgs.add_ai_message("Hello, I will be conducting your interveiw today. Can you tell me what field you're applying for?")
+    msgs.add_ai_message("Hello, I will be conducting your interveiw today. Can you tell me what field you're applying for? You can also give me a job description and/or questions that you would like practice with!")
 
 # view_messages = st.expander("View the message contents in session state") # comment this out for message display
 
