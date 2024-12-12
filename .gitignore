@@ -1,2 +1,4 @@
 # Ignore environment files
 .env
+
+.devcontainer/devcontainer.json
