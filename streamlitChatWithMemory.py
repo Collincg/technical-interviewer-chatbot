@@ -25,8 +25,8 @@ load_dotenv()
 # print("TEST_1")
 # print("os.getenv() test: ", GROQ_API_KEY_M)
 
-st.set_page_config(page_title="StreamlitChatMessageHistory", page_icon="📖")
-st.title("📖 StreamlitChatMessageHistory")
+st.set_page_config(page_title="Technical Interview Chatbot", page_icon="📖")
+st.title("Technical Interview Chatbot")
 
 """
 A basic example of using StreamlitChatMessageHistory to help LLMChain remember messages in a conversation.
