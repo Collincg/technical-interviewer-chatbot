@@ -4,7 +4,7 @@ This project is a **Technical Interview Chatbot** designed to simulate a technic
 
 ---
 ### A preview of the StreamLit User Interface:
-<img width="775" alt="Screenshot 2024-12-12 at 12 24 00 PM" src="https://github.com/user-attachments/assets/ef95cda4-dc77-499f-9b46-8db8f1b03849" />
+<img width="754" alt="Screenshot 2024-12-12 at 12 55 47 PM" src="https://github.com/user-attachments/assets/a16bd0b5-d0c6-483d-8b37-7c685bb3e0e8" />
 
 ---
 
