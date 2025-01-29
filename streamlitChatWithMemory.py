@@ -35,7 +35,7 @@ prompt = ChatPromptTemplate.from_messages(
     ]
 )
 
-model = ChatGroq(model="llama-3.1-70b-versatile", api_key=GROQ_API_KEY)
+model = ChatGroq(model="llama-3.3-70b-versatile", api_key=GROQ_API_KEY)
 chain = prompt | model
 chain_with_history = RunnableWithMessageHistory(
     chain,
